@@ -1,0 +1,80 @@
+.advantages-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-information__wrapper {
+  margin-top: 20px;
+}
+
+.advantages-information__title {
+  margin-bottom: 42px;
+}
+
+.advantages-information__list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding:  0;
+
+  list-style-type: none;
+}
+
+.advantages-information__item {
+  position: relative;
+
+  min-height: 54px;
+  margin-bottom: 26px;
+  margin-left: 80px;
+
+  font-family: "Arial" , sans-serif;
+  font-weight: 400;
+  color: $black-text;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: -80px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $primary;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    left: -62px;
+
+    width: 30px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantages-item-leaf.svg");
+  }
+
+  &--water::before {
+    top: 12px;
+    left: -65px;
+    background-image: url("../img/advantages-item-water.svg");
+  }
+
+  &--tools::before {
+    background-image: url("../img/advantages-item-tools.svg");
+  }
+
+  &--time::before {
+    background-image: url("../img/advantages-item-time.svg");
+  }
+}

@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  background-color: $white;
+  }
+
+.page-header__logo {
+  margin-right: auto;
+}
+
+.page-header__logo-mobile {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+.page-header__toggle-button {
+  width: 24px;
+  height: 19px;
+  margin-left: auto;
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+
+  &--open {
+    background-image: url("../img/header-menu-toggler-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/header-menu-toggler-close.svg");
+  }
+}

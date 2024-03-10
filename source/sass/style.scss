@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "global/variables";
+@import "global/fonts";
+@import "global/scaffolding";
+@import "global/visually-hidden";
+@import "blocks/button";
+@import "blocks/section-header";
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/page-nav";
+@import "blocks/page-main";
+@import "blocks/preview-content";
+@import "blocks/type-of-products";
+@import "blocks/type-of-product";
+@import "blocks/advantages-information";
+@import "blocks/additional-information";
+@import "blocks/address";
+@import "blocks/page-footer";
+@import "blocks/container";

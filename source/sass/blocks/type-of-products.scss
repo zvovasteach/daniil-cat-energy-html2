@@ -1,0 +1,16 @@
+
+.type-of-products__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+}
+
+.type-of-products__item{
+  background-color: $basic-grey;
+}
