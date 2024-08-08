@@ -10,7 +10,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from "gulp-libsquoosh";
 import webp from "gulp-webp";
-// import svgstore from 'gulp-svgstore';
 import svgSprite from "gulp-svg-sprite";
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
@@ -63,7 +62,7 @@ export const copyImages = () => {
 }
 
 export const createWebp = () => {
-  return gulp.src('source/img/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest('build/img'))
 }
@@ -134,7 +133,7 @@ const reload = (done) => {
 
 export const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  // gulp.watch('source/js/map.js', gulp.series(scripts));
+  gulp.watch('source/js/map.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 //Build

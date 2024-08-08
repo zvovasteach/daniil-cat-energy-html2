@@ -7,6 +7,14 @@
   }
 }
 
+.page-footer__address--arranger {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 .page-footer__address--wrapper {
   display: flex;
   gap: 0;

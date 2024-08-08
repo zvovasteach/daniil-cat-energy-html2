@@ -1,0 +1,38 @@
+.line-title {
+  position: relative;
+  margin-left: -20px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 61%;
+    right: 0;
+    left: 0;
+
+    height: 2px;
+
+    background-color: $primary;
+  }
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+
+    &::after {
+      top: 61%;
+      right: -30px;
+      left: -36px;
+      height: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -75px;
+
+    &::after {
+      top: 62%;
+      right: -110px;
+      left: -110px;
+    }
+  }
+}

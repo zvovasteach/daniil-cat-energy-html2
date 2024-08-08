@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswald-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/oswald-500.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -31,13 +33,13 @@
   <nav class="page-nav">
     <ul class="page-nav__list">
       <li class="page-nav__item">
-        <a class="page-nav__link page-nav__link--active">Главная</a>
+        <a class="page-nav__link page-nav__link-main-page page-nav__link--active page-nav__link--active-main-page">Главная</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link" href="#">Каталог продукции</a>
+        <a class="page-nav__link page-nav__link-main-page" href="catalog.html">Каталог продукции</a>
       </li>
       <li class="page-nav__item">
-        <a class="page-nav__link" href="#">Подбор программы</a>
+        <a class="page-nav__link page-nav__link-main-page" href="#">Подбор программы</a>
       </li>
     </ul>
   </nav>
@@ -157,12 +159,14 @@
     </div>
   </section>
 </main>
-  <footer class="page-footer">
+<footer class="page-footer">
 
   <div class="page-footer__address">
-    <div class="page-footer__address--wrapper">
-      <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
-      <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+    <div class="page-footer__address--arranger">
+      <div class="page-footer__address--wrapper">
+        <h3 class="page-footer__address--title">Приглашаем <br>к сотрудничеству дилеров!</h3>
+        <address class="page-footer__address--place-info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      </div>
     </div>
     <div id="map" class="page-footer__address--map"></div>
   </div>

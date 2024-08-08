@@ -130,7 +130,9 @@
   &:active {
     opacity: 0.3;
   }
+}
 
+.page-nav__link-main-page {
   @media (min-width: $desktop-width) {
     color: $white;
   }
@@ -152,10 +154,12 @@
 
       background-color: $primary;
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      bottom: 16px;
-      background-color: $white;
-    }
+.page-nav__link--active-main-page::before {
+  @media (min-width: $desktop-width) {
+    bottom: 16px;
+    background-color: $white;
   }
 }
